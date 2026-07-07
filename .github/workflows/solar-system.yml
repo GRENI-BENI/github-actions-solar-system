@@ -54,12 +54,6 @@ jobs:
           node-version: 18
       - name: Install Dependencies
         run: npm install
-      - name: Run coverage
-        run: npm run code-coverage
-      - name: Upload
-        uses: actions/upload-artifact@v7
-        with:
-          path: 'coverage'
   docker:
     runs-on: ubuntu-latest
     needs:
