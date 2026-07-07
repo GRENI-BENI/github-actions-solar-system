@@ -70,4 +70,4 @@ jobs:
         uses: docker/build-push-action@v7
         with:
           push: true
-          tags: ghcr.io/${{ string.toLower(github.repository_owner) }}/solar-system:${{ github.sha }}
+          tags: ghcr.io/greni-beni/solar-system:${{ github.sha }}
