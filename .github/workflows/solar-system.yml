@@ -62,7 +62,7 @@ jobs:
           path: 'coverage'
   docker:
     runs-on: ubuntu-latest
-    depends-on:
+    needs:
       - unit-testing
       - code-coverage
     steps:
