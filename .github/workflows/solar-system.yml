@@ -18,7 +18,6 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: node:20
-      env:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
